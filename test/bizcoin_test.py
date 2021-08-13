@@ -11,8 +11,7 @@ from biz_coin_scraper import BizCoinScraper
 
 bizCoinScraper = BizCoinScraper()
 
-bizCoinScraper.update_coingecko()
-bizCoinScraper.get_all_text()
+bizCoinScraper.scrape()
 
 time = datetime.utcnow().strftime("%Y-%m-%d-%H-%M-%S")
 fileName = f'{dataPath}/dump.json'
